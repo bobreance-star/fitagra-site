@@ -102,6 +102,9 @@
     }
 
     .nav__links {
+      .nav__toggle {
+  display: none;
+}
       line-height: 1;
       display: flex;
       align-items: center;
@@ -904,6 +907,9 @@
           <img class="brand__fitagra" src="assets/fitagra-logo.png" alt="Фитагра">
           <span class="brand__maker">NAFF MEDICAL</span>
         </a>
+        <button class="nav__toggle" aria-label="Меню">
+  ☰
+</button>
         <nav class="nav__links" aria-label="Основная навигация">
           <a href="#about">О продукте</a>
           <a href="#composition">Состав</a>
@@ -912,6 +918,14 @@
           <a href="#use">Прием</a>
           <a class="button button--primary" href="#buy">Заказать</a>
         </nav>
+        <script>
+  const toggle = document.querySelector('.nav__toggle');
+  const navLinks = document.querySelector('.nav__links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('nav__links--open');
+  });
+</script>
       </div>
     </header>
 
@@ -1187,3 +1201,38 @@
   </div>
 </body>
 </html>
+@media (max-width: 940px) {
+
+  .nav {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 12px;
+    background: rgba(255,255,255,.04);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .nav__links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 14px;
+    padding-top: 16px;
+    text-align: center;
+  }
+
+  .nav__links--open {
+    display: flex;
+  }
+}
