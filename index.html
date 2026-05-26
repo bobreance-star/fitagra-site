@@ -85,12 +85,12 @@
       min-width: 0;
     }
 
-   .brand__fitagra {
-  width: clamp(110px, 16vw, 180px);
-  height: auto;
-  filter: brightness(2);
-  opacity: 1;
-}
+    .brand__fitagra {
+      width: clamp(150px, 20vw, 245px);
+      height: auto;
+      filter: brightness(0) invert(1);
+    }
+
     .brand__maker {
       padding-left: 18px;
       border-left: 1px solid var(--line);
@@ -101,35 +101,20 @@
       white-space: nowrap;
     }
 
-    .nav__toggle {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border: 1px solid rgba(255,255,255,.1);
-  border-radius: 12px;
-  background: rgba(255,255,255,.04);
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-}
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #dce4ff;
+    }
 
-.nav__links {
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: 14px;
-  font-weight: 700;
-  color: #dce4ff;
-}
- 
     .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 40px;
+      min-height: 46px;
       padding: 0 22px;
       border-radius: var(--radius);
       border: 1px solid transparent;
@@ -160,7 +145,7 @@
       min-height: calc(100svh - 74px);
       display: grid;
       align-items: center;
-      padding: 30px 0 42px;
+      padding: 64px 0 42px;
       color: var(--white);
       background:
         linear-gradient(90deg, rgba(5, 7, 17, .9) 0%, rgba(8, 11, 24, .78) 43%, rgba(5, 7, 17, .55) 100%),
@@ -215,13 +200,12 @@
       margin-top: 0;
     }
 
-   .hero__logo {
-  width: min(760px, 115%);
-  height: auto;
-  margin-bottom: 24px;
-  filter: brightness(2);
-  opacity: 1;
-}
+    .hero__logo {
+      width: min(620px, 100%);
+      height: auto;
+      margin-bottom: 24px;
+      filter: brightness(0) invert(1);
+    }
 
     .hero h1 {
       max-width: 780px;
@@ -412,7 +396,7 @@
     .ingredient__image {
       width: 100%;
       aspect-ratio: 4 / 3;
-      object-fit: contain;
+      object-fit: cover;
       background: #0f162a;
       border-bottom: 1px solid var(--line);
     }
@@ -617,42 +601,37 @@
       background: rgba(255, 255, 255, .08);
     }
 
-   .maker__logo img {
-  width: 100%;
-  filter: brightness(0) invert(1);
-}
+    .maker__logo img {
+      width: 100%;
+    }
+
     .steps {
       counter-reset: step;
     }
 
     .step {
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-  padding-left: 0;
-}
+      position: relative;
+      padding-left: 74px;
+    }
 
-.step::before {
-  counter-increment: step;
-  content: counter(step);
-  width: 50px;
-  height: 50px;
-  min-width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #26345d, #111827);
-  color: #f5f7ff;
-  border: 1px solid rgba(211, 219, 242, .2);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, .24);
-  font-weight: 800;
-  font-size: 19px;
-  position: static;
-  flex-shrink: 0;
-}
-
-   
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #26345d, #111827);
+      color: #f5f7ff;
+      border: 1px solid rgba(211, 219, 242, .2);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .24);
+      font-weight: 800;
+      font-size: 19px;
+    }
 
     .notice {
       background: rgba(255, 230, 154, .1);
@@ -773,85 +752,42 @@
     }
 
     @media (max-width: 940px) {
+      .nav__links {
+        display: none;
+      }
 
-  .nav {
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 0;
-    min-height: auto;
-  }
+      .hero {
+        min-height: auto;
+        padding: 52px 0 36px;
+      }
 
-  .brand {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-  }
+      .hero__inner,
+      .section__head,
+      .product,
+      .cta__inner {
+        grid-template-columns: 1fr;
+      }
 
-  .nav__toggle {
-    display: flex;
-  }
+      .hero__visual {
+        min-height: 420px;
+      }
 
-  .nav__links {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    gap: 14px;
-    padding-top: 12px;
-    text-align: center;
-  }
+      .pack {
+        margin: 0 auto;
+        width: min(700px, 104%);
+        transform: none;
+      }
 
-  .nav__links--open {
-    display: flex;
-  }
+      .grid--3,
+      .grid--2,
+      .grid--4 {
+        grid-template-columns: 1fr;
+      }
 
-  .ingredient__image {
-    height: 140px;
-    object-fit: contain;
-  }
-
-  .hero {
-    min-height: auto;
-    padding: 18px 0 36px;
-  }
-
-  .hero__logo {
-    width: min(520px, 100%);
-    margin-bottom: 18px;
-  }
-
-  .hero__lead {
-    font-size: 16px;
-    line-height: 1.45;
-  }
-
-  .hero__inner,
-  .section__head,
-  .product,
-  .cta__inner {
-    grid-template-columns: 1fr;
-  }
-
-  .hero__visual {
-    min-height: 260px;
-  }
-
-  .pack {
-    width: min(560px, 100%);
-    transform: none;
-  }
-
-  .grid--3,
-  .grid--2,
-  .grid--4 {
-    grid-template-columns: 1fr;
-  }
-
-  .section {
-    padding: 54px 0;
-  }
-}
+      .section {
+        padding: 54px 0;
+      }
+    }
 
     @media (max-width: 620px) {
       .container {
@@ -859,8 +795,8 @@
       }
 
       .nav {
-  min-height: 58px;
-}
+        min-height: 66px;
+      }
 
       .brand__maker {
         display: none;
@@ -926,9 +862,6 @@
           <img class="brand__fitagra" src="assets/fitagra-logo.png" alt="Фитагра">
           <span class="brand__maker">NAFF MEDICAL</span>
         </a>
-        <button class="nav__toggle" aria-label="Меню">
-  ☰
-</button>
         <nav class="nav__links" aria-label="Основная навигация">
           <a href="#about">О продукте</a>
           <a href="#composition">Состав</a>
@@ -937,14 +870,6 @@
           <a href="#use">Прием</a>
           <a class="button button--primary" href="#buy">Заказать</a>
         </nav>
-        <script>
-  const toggle = document.querySelector('.nav__toggle');
-  const navLinks = document.querySelector('.nav__links');
-
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('nav__links--open');
-  });
-</script>
       </div>
     </header>
 
@@ -1220,38 +1145,3 @@
   </div>
 </body>
 </html>
-@media (max-width: 940px) {
-
-  .nav {
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav__toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border: 1px solid rgba(255,255,255,.1);
-    border-radius: 12px;
-    background: rgba(255,255,255,.04);
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  .nav__links {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    gap: 14px;
-    padding-top: 16px;
-    text-align: center;
-  }
-
-  .nav__links--open {
-    display: flex;
-  }
-}
