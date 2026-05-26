@@ -101,9 +101,28 @@
       white-space: nowrap;
     }
 
-    .nav__links {
-      .nav__toggle {
+    .nav__toggle {
   display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 12px;
+  background: rgba(255,255,255,.04);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav__links {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #dce4ff;
 }
       line-height: 1;
       display: flex;
