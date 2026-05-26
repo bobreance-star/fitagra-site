@@ -615,9 +615,31 @@
     }
 
     .step {
-      position: relative;
-      padding-left: 74px;
-    }
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding-left: 0;
+}
+
+.step::before {
+  counter-increment: step;
+  content: counter(step);
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #26345d, #111827);
+  color: #f5f7ff;
+  border: 1px solid rgba(211, 219, 242, .2);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .24);
+  font-weight: 800;
+  font-size: 19px;
+  position: static;
+  flex-shrink: 0;
+}
 
     .step::before {
       counter-increment: step;
