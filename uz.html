@@ -967,14 +967,14 @@
     <a href="#benefits">Afzalliklari</a>
     <a href="#use">Qabul</a>
 
-    
+   <a class="button button--primary nav-buy" href="#buy">Buyurtma berish</a> 
   </nav>
     <div class="lang-switch">
       <a class="lang-link" href="/">RU</a>
       <strong class="lang-active">UZ</strong>
     </div>
 
-    <a class="button button--primary nav-buy" href="#buy">Buyurtma berish</a>
+    
 </div>
     </header>
 
@@ -1306,25 +1306,5 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const btn = document.querySelector('.mobile-menu-btn');
-  const nav = document.querySelector('.nav__links');
-
-  btn.addEventListener('click', function() {
-    if (nav.style.display === 'flex') {
-      nav.style.display = 'none';
-    } else {
-      nav.style.display = 'flex';
-      nav.style.flexDirection = 'column';
-      nav.style.alignItems = 'center';
-      nav.style.gap = '12px';
-      nav.style.width = '100%';
-      nav.style.marginTop = '15px';
-    }
-  });
-});
-</script>
-
 </body>
 </html>
