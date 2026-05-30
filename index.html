@@ -785,7 +785,15 @@
       margin: 0;
       font-size: 13px;
     }
-
+.mobile-menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 0;
+}
     @media (max-width: 940px) {
      .mobile-menu-btn {
   display: block;
@@ -944,6 +952,7 @@
           <img class="brand__fitagra" src="assets/fitagra-logo.png" alt="Фитагра">
           <span class="brand__maker">NAFF MEDICAL</span>
         </a>
+        <button class="mobile-menu-btn">☰</button>
         <nav class="nav__links" aria-label="Основная навигация">
           <a href="#about">О продукте</a>
           <a href="#composition">Состав</a>
@@ -951,13 +960,15 @@
           <a href="#benefits">Преимущества</a>
           <a href="#use">Прием</a>
 
-          <div class="lang-switch">
+          
+          
+          
+        </nav>
+        <div class="lang-switch">
   <strong class="lang-active">RU</strong>
   <a class="lang-link" href="/uz.html">UZ</a>
 </div>
-          
-          <a class="button button--primary" href="#buy">Заказать</a>
-        </nav>
+  <a class="button button--primary" href="#buy">Заказать</a>
       </div>
     </header>
 
@@ -1270,5 +1281,15 @@
       </div>
     </footer>
   </div>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const btn = document.querySelector('.mobile-menu-btn');
+  const nav = document.querySelector('.nav__links');
+
+  btn.addEventListener('click', function() {
+    nav.classList.toggle('mobile-open');
+  });
+});
+</script>
 </body>
 </html>
