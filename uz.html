@@ -802,8 +802,17 @@
   }
 
   .nav__links {
-    display: none;
-  }
+  display: none;
+}
+
+.nav__links.mobile-open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 15px;
+}
 
 
       .hero {
@@ -1251,6 +1260,16 @@ chidamlilikni oshirishga yordam beradi. Modda almashinuvini va tananing umumiy t
     <p>FITAGRA, NAFF MEDICAL tomonidan ishlab chiqarilgan biologik faol qo‘shimcha. Qo‘llashdan oldin yo‘riqnoma bilan tanishish va mutaxassis bilan maslahatlashish tavsiya etiladi.</p>
   </div>
 </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const btn = document.querySelector('.mobile-menu-btn');
+  const nav = document.querySelector('.nav__links');
+
+  btn.addEventListener('click', function() {
+    nav.classList.toggle('mobile-open');
+  });
+});
+</script>
     <script>
 document.addEventListener('DOMContentLoaded', function() {
   const btn = document.querySelector('.mobile-menu-btn');
