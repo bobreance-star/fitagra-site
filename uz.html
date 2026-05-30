@@ -36,6 +36,35 @@
 
 <meta name="twitter:card" content="summary_large_image">
   <style>
+    .lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 12px;
+}
+
+.lang-active,
+.lang-link {
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.lang-active {
+  background: #6688ff;
+  color: #fff;
+}
+
+.lang-link {
+  background: rgba(255,255,255,.08);
+  color: #fff;
+  text-decoration: none;
+}
+
+.lang-link:hover {
+  background: rgba(255,255,255,.15);
+}
     :root {
       --ink: #f5f7ff;
       --ink-2: #dce4ff;
@@ -877,8 +906,10 @@
   <a href="#benefits">Afzalliklari</a>
   <a href="#use">Qabul qilish</a>
   
-<a href="/">RU</a>
-<strong>UZ</strong>
+<div class="lang-switch">
+  <a class="lang-link" href="/">RU</a>
+  <strong class="lang-active">UZ</strong>
+</div>
   
           <a class="button button--primary" href="#buy">Buyurtma berish</a>
 </nav>
