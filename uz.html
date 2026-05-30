@@ -1,1 +1,1205 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <link rel="icon" href="/assets/favicon.ico">
+  <title>FITAGRA – Erkaklar salomatligi uchun biologik faol qo‘shimcha</title>
 
+<meta name="description" content="FITAGRA – erkaklar salomatligi va erkaklik faoliyatini qo‘llab-quvvatlash uchun biologik faol qo‘shimcha. Tabiiy o‘simlik ekstraktlari majmuasi.">
+
+<meta name="keywords" content="FITAGRA, Fitagra, erkaklar salomatligi, biologik faol qo‘shimcha, erkaklar uchun, Tongkat Ali, Tribulus, Epimedium">
+
+<meta name="robots" content="index, follow">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="UTF-8">
+<meta name="theme-color" content="#060912">
+
+<link rel="canonical" href="https://fitagra.uz/uz.html">
+
+<link rel="alternate" hreflang="uz" href="https://fitagra.uz/uz.html">
+<link rel="alternate" hreflang="ru" href="https://fitagra.uz/">
+
+<meta property="og:title" content="FITAGRA – Erkaklar salomatligi uchun biologik faol qo‘shimcha">
+<meta property="og:description" content="Erkaklar salomatligini qo‘llab-quvvatlash uchun o‘simlik ekstraktlari majmuasi.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:url" content="https://fitagra.uz">
+
+<meta property="og:image" content="https://fitagra.uz/assets/fitagra-pack.png">
+
+<meta name="twitter:image" content="https://fitagra.uz/assets/fitagra-pack.png">
+
+  <meta name="author" content="NAFF MEDICAL">
+<meta name="format-detection" content="telephone=no">
+
+<meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root {
+      --ink: #f5f7ff;
+      --ink-2: #dce4ff;
+      --silver: #202943;
+      --line: rgba(211, 219, 242, .16);
+      --muted: #aab5d4;
+      --white: #ffffff;
+      --accent: #6688ff;
+      --mint: #21b89a;
+      --warning: #221d12;
+      --panel: #111827;
+      --panel-2: #151e34;
+      --panel-3: #0b1020;
+      --shadow: 0 24px 80px rgba(0, 0, 0, .42);
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 18% 8%, rgba(102, 136, 255, .16), transparent 30%),
+        radial-gradient(circle at 82% 18%, rgba(33, 184, 154, .1), transparent 24%),
+        linear-gradient(180deg, #060912 0%, #0a1020 45%, #070a12 100%);
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .page {
+      overflow: hidden;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(7, 10, 18, .86);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      min-width: 0;
+    }
+
+    .brand__fitagra {
+      width: clamp(150px, 20vw, 245px);
+      height: auto;
+      filter: brightness(0) invert(1);
+    }
+
+    .brand__maker {
+      padding-left: 18px;
+      border-left: 1px solid var(--line);
+      color: #c8d2f5;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #dce4ff;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 22px;
+      border-radius: var(--radius);
+      border: 1px solid transparent;
+      font-weight: 800;
+      letter-spacing: 0;
+      cursor: pointer;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button--primary {
+      background: linear-gradient(135deg, #f8fbff, #b9c6e7);
+      color: #10182f;
+      box-shadow: 0 12px 26px rgba(0, 0, 0, .28);
+    }
+
+    .button--light {
+      background: rgba(255, 255, 255, .08);
+      color: var(--white);
+      border-color: rgba(255, 255, 255, .18);
+    }
+
+    .hero {
+      position: relative;
+      min-height: calc(100svh - 74px);
+      display: grid;
+      align-items: center;
+      padding: 64px 0 42px;
+      color: var(--white);
+      background:
+        linear-gradient(90deg, rgba(5, 7, 17, .9) 0%, rgba(8, 11, 24, .78) 43%, rgba(5, 7, 17, .55) 100%),
+        radial-gradient(circle at 76% 34%, rgba(102, 136, 255, .28), transparent 34%),
+        url("assets/hero-network-bg.jpg") center / cover no-repeat,
+        #050711;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(255, 255, 255, .08) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(255, 255, 255, .06) 1px, transparent 1px);
+      background-size: 64px 64px;
+      mask-image: linear-gradient(120deg, black, transparent 76%);
+      pointer-events: none;
+    }
+
+    .hero__inner {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, .82fr) minmax(420px, 1.18fr);
+      align-items: center;
+      gap: 30px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 20px;
+      color: #d7def7;
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    .hero__logo {
+      width: min(620px, 100%);
+      height: auto;
+      margin-bottom: 24px;
+      filter: brightness(0) invert(1);
+    }
+
+    .hero h1 {
+      max-width: 780px;
+      margin-bottom: 24px;
+      font-size: clamp(42px, 7vw, 92px);
+      line-height: .92;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .hero__lead {
+      max-width: 650px;
+      margin-bottom: 30px;
+      color: #dce4ff;
+      font-size: clamp(18px, 2vw, 23px);
+      font-weight: 500;
+    }
+
+    .hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .hero__facts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 640px;
+    }
+
+    .fact {
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: var(--radius);
+      padding: 14px;
+      background: rgba(255, 255, 255, .08);
+    }
+
+    .fact strong {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--white);
+      font-size: 22px;
+      line-height: 1.1;
+      overflow-wrap: anywhere;
+    }
+
+    .fact span {
+      color: #c8d2f5;
+      font-size: 13px;
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+
+    .fact--maker strong {
+      font-size: 17px;
+    }
+
+    .fact--maker span {
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    .hero__visual {
+      position: relative;
+      min-height: 560px;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .hero__visual::before {
+      content: none;
+      position: absolute;
+      inset: 8% -8% 6% 2%;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 255, 255, .22), rgba(65, 104, 215, .08) 52%, transparent 72%);
+      filter: blur(2px);
+    }
+
+    .pack {
+      position: relative;
+      width: min(840px, 105%);
+      margin: 0 auto;
+      filter: drop-shadow(0 34px 52px rgba(0, 0, 0, .38));
+      transform: translateX(2%);
+    }
+
+    .section {
+      position: relative;
+      padding: 72px 0;
+    }
+
+    .section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(5, 7, 17, .9), rgba(5, 7, 17, .94)),
+        url("assets/hero-network-bg.jpg") center / cover no-repeat;
+      opacity: .16;
+      pointer-events: none;
+    }
+
+    .section > .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section--white {
+      background:
+        radial-gradient(circle at 12% 0%, rgba(190, 48, 255, .13), transparent 30%),
+        radial-gradient(circle at 88% 20%, rgba(102, 136, 255, .12), transparent 28%),
+        linear-gradient(180deg, rgba(255, 255, 255, .035), rgba(255, 255, 255, .015)),
+        var(--panel-3);
+    }
+
+    .section__head {
+      display: grid;
+      grid-template-columns: minmax(0, .72fr) minmax(280px, .28fr);
+      gap: 34px;
+      align-items: end;
+      margin-bottom: 28px;
+    }
+
+    .section h2 {
+      margin-bottom: 0;
+      font-size: clamp(28px, 3vw, 42px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .section__text {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid--3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid--2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid--4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .07), rgba(255, 255, 255, .035));
+      box-shadow: 0 18px 50px rgba(0, 0, 0, .18);
+      padding: 26px;
+      min-height: 190px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .ingredient {
+      padding: 0;
+      overflow: hidden;
+      min-height: 100%;
+    }
+
+    .ingredient__image {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #0f162a;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .ingredient__body {
+      padding: 22px;
+    }
+
+    .ingredient__amount {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      margin-bottom: 14px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #e8eefc, #9fb2e8);
+      color: #111731;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .ingredient__name {
+      margin-bottom: 8px;
+      font-size: 20px;
+      line-height: 1.15;
+    }
+
+    .ingredient__latin {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .composition-note {
+      margin-top: 18px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .055);
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .composition-note strong {
+      color: var(--white);
+    }
+
+    .details-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .component-detail {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .07), rgba(255, 255, 255, .035));
+      overflow: hidden;
+    }
+
+    .component-detail summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 20px 22px;
+      color: var(--white);
+      font-size: 20px;
+      font-weight: 800;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .component-detail summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .component-detail summary::after {
+      content: "+";
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      background: var(--silver);
+      color: var(--white);
+      font-weight: 800;
+    }
+
+    .component-detail[open] summary::after {
+      content: "-";
+    }
+
+    .component-detail__body {
+      padding: 0 22px 22px;
+      color: var(--muted);
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .component-detail__body p {
+      margin-bottom: 12px;
+    }
+
+    .component-detail__body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .feature-panel {
+      margin-bottom: 24px;
+      padding: 28px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(102, 136, 255, .16), rgba(33, 184, 154, .12));
+      border: 1px solid var(--line);
+    }
+
+    .feature-panel p {
+      max-width: 980px;
+      margin: 0;
+      color: var(--white);
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1.55;
+    }
+
+    .card__num {
+      width: 38px;
+      height: 38px;
+      display: inline-grid;
+      place-items: center;
+      margin-bottom: 24px;
+      border-radius: 50%;
+      background: var(--silver);
+      color: var(--white);
+      font-weight: 800;
+    }
+
+    .product-band {
+      background:
+        linear-gradient(180deg, rgba(5, 7, 17, .7), rgba(5, 7, 17, .82)),
+        url("assets/hero-network-bg.jpg") center / cover no-repeat,
+        radial-gradient(circle at 78% 24%, rgba(102, 136, 255, .18), transparent 28%),
+        linear-gradient(90deg, rgba(7, 10, 18, .98), rgba(17, 25, 54, .96)),
+        #0b1020;
+      color: var(--white);
+    }
+
+    .product {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(300px, .55fr);
+      gap: 48px;
+      align-items: center;
+    }
+
+    .product__logo {
+      width: min(420px, 78vw);
+      margin-bottom: 22px;
+    }
+
+    .product h2 {
+      color: var(--white);
+    }
+
+    .product p {
+      color: #dbe3ff;
+      font-size: 18px;
+    }
+
+    .specs {
+      display: grid;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .spec {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .16);
+      color: #dbe3ff;
+      font-weight: 600;
+    }
+
+    .spec strong {
+      color: var(--white);
+      text-align: right;
+    }
+
+    .maker {
+      border-radius: var(--radius);
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, .16);
+      background: rgba(255, 255, 255, .08);
+    }
+
+    .maker__logo {
+      margin-bottom: 22px;
+      padding: 18px;
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .08);
+    }
+
+    .maker__logo img {
+      width: 100%;
+    }
+
+    .steps {
+      counter-reset: step;
+    }
+
+    .step {
+  position: relative;
+  padding-left: 0;
+}
+
+   
+
+    .notice {
+      background: rgba(255, 230, 154, .1);
+      border: 1px solid rgba(255, 230, 154, .28);
+      border-radius: var(--radius);
+      padding: 22px;
+      color: #f2dfaa;
+      font-weight: 600;
+    }
+
+    .contra {
+      border-left: 4px solid #e36a6a;
+      background: rgba(227, 106, 106, .1);
+      color: #ffc5c0;
+    }
+
+    .cta {
+      padding: 76px 0;
+      background:
+        linear-gradient(90deg, rgba(5, 7, 17, .86), rgba(10, 16, 32, .9)),
+        url("assets/hero-network-bg.jpg") center / cover no-repeat,
+        radial-gradient(circle at 12% 20%, rgba(33, 184, 154, .12), transparent 32%),
+        linear-gradient(180deg, rgba(255, 255, 255, .04), rgba(255, 255, 255, .02)),
+        var(--panel-2);
+    }
+
+    .cta__inner {
+      display: grid;
+      grid-template-columns: minmax(0, .95fr) minmax(280px, .55fr);
+      align-items: center;
+      gap: 34px;
+    }
+
+    .cta h2 {
+      margin-bottom: 14px;
+      font-size: clamp(28px, 3vw, 40px);
+      line-height: 1.08;
+    }
+
+    .cta p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .cta__contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 22px;
+      margin-top: 22px;
+      color: var(--white);
+      font-weight: 800;
+    }
+
+    .cta__contacts a {
+      border-bottom: 2px solid rgba(160, 178, 232, .42);
+    }
+
+    .cta__actions {
+      display: grid;
+      gap: 12px;
+    }
+
+    .market-button {
+      min-height: 64px;
+      padding: 12px 18px;
+      background: #ffff00;
+      color: #6d00ff;
+      border-color: rgba(109, 0, 255, .18);
+      box-shadow: 0 16px 34px rgba(109, 0, 255, .18);
+      gap: 18px;
+      justify-content: center;
+    }
+
+    .market-button img {
+      width: 150px;
+      max-width: 48%;
+      height: auto;
+      flex: 0 1 auto;
+    }
+
+    .market-button span {
+      color: #32115d;
+      font-size: 22px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .contact-actions {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .footer {
+      padding: 42px 0;
+      color: #cfd7f7;
+      background: #050711;
+    }
+
+    .footer__inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .footer img {
+      width: 190px;
+      opacity: .92;
+    }
+
+    .footer p {
+      max-width: 660px;
+      margin: 0;
+      font-size: 13px;
+    }
+
+    @media (max-width: 940px) {
+      .nav__links {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 52px 0 36px;
+      }
+
+      .hero__inner,
+      .section__head,
+      .product,
+      .cta__inner {
+        grid-template-columns: 1fr;
+      }
+
+      .hero__visual {
+        min-height: 420px;
+      }
+
+      .pack {
+        margin: 0 auto;
+        width: min(700px, 104%);
+        transform: none;
+      }
+
+      .grid--3,
+      .grid--2,
+      .grid--4 {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 54px 0;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .nav {
+        min-height: 66px;
+      }
+
+      .brand__maker {
+        display: none;
+      }
+
+      .hero__facts {
+        grid-template-columns: 1fr;
+      }
+
+      .hero__visual {
+        min-height: 260px;
+      }
+
+      .hero__logo {
+        width: min(360px, 100%);
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .cta__actions {
+        width: 100%;
+      }
+
+      .market-button img {
+        max-width: 52%;
+      }
+
+      .contact-actions {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 22px;
+      }
+
+      .spec {
+        display: block;
+      }
+
+      .spec strong {
+        display: block;
+        margin-top: 4px;
+        text-align: left;
+      }
+
+      .footer__inner {
+        display: block;
+      }
+
+      .footer img {
+        margin-bottom: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="Фитагра">
+          <img class="brand__fitagra" src="assets/fitagra-logo.png" alt="Фитагра">
+          <span class="brand__maker">NAFF MEDICAL</span>
+        </a>
+        <nav class="nav__links" aria-label="Asosiy navigatsiya">
+  <a href="#about">Mahsulot haqida</a>
+  <a href="#composition">Tarkibi</a>
+  <a href="#components">Komponentlar</a>
+  <a href="#benefits">Afzalliklari</a>
+  <a href="#use">Qabul qilish</a>
+  
+<a href="/">RU</a>
+<strong>UZ</strong>
+  
+          <a class="button button--primary" href="#buy">Buyurtma berish</a>
+</nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero__inner">
+          <div>
+            <p class="eyebrow">Biologik faol qo‘shimcha</p>
+            <h1 aria-label="Фитагра">
+              <img class="hero__logo" src="assets/fitagra-logo-white.png" alt="Фитагра">
+            </h1>
+            <p class="hero__lead">Erkaklar salomatligini qo‘llab-quvvatlash va erektil funksiyani yaxshilash uchun o‘simlik ekstraktlari asosidagi majmua.</p>
+            <div class="hero__actions">
+              <a class="button button--light" href="#buy">Qayerdan xarid qilish</a>
+              <a class="button button--primary" href="#about">Batafsil</a>
+            </div>
+            <div class="hero__facts" aria-label="Asosiy xususiyatlar">
+              <div class="fact">
+                <strong>30</strong>
+                <span>kapsula qadoqda</span>
+              </div>
+              <div class="fact">
+                <strong>500 mg</strong>
+                <span>kapsula massasi</span>
+              </div>
+              <div class="fact fact--maker">
+                <span>ishlab chiqaruvchi</span>
+                <strong>NAFF MEDICAL</strong>
+              </div>
+            </div>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <img class="pack" src="assets/fitagra-pack.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--white" id="about">
+        <div class="container">
+          <div class="section__head">
+           <h2>Erkaklar salomatligini qo‘llab-quvvatlashning qulay shakli</h2>
+            <p class="section__text">FITAGRA kapsula shaklida ishlab chiqariladi va voyaga yetgan erkaklar ratsionida kurs tarzida qabul qilish uchun mo‘ljallangan.</p>
+          </div>
+          <div class="feature-panel">
+            <p>Preparat erkaklarda jinsiy faollikni yaxshilashga, testosteron darajasini oshirishga, sperma sifatini yahshilanishiga, jismoniy
+chidamlilikni oshirishga yordam beradi. Modda almashinuvini va tananing umumiy tonusini rag'batlantiradi.</p>
+          </div>
+          <div class="grid grid--3">
+            <article class="card">
+              <span class="card__num">1</span>
+              <h3>Erkaklar salomatligi uchun</h3>
+              <p>Formula erkaklar tonusi va reproduktiv salomatligi bilan bog‘liq fiziologik jarayonlarni qo‘llab-quvvatlashga qaratilgan.</p>
+            </article>
+            <article class="card">
+              <span class="card__num">2</span>
+              <h3>Kurs uchun kapsulalar</h3>
+              <p>Qadoqda har biri 500 mg bo‘lgan 30 ta kapsula mavjud: mutaxassis tavsiyasiga ko‘ra har kuni qabul qilish uchun qulay shakl.</p>
+            </article>
+            <article class="card">
+              <span class="card__num">3</span>
+              <h3>NAFF MEDICAL mahsuloti</h3>
+              <p>Mahsulot NAFF MEDICAL tomonidan ishlab chiqarilgan bo‘lib, ishlab chiqaruvchining logotipi mahsulot qadoqlarida ko‘rsatilgan.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="composition">
+        <div class="container">
+          <div class="section__head">
+            <h2>O‘simlik ekstraktlari asosida</h2>
+            <p class="section__text">Bir kapsula tarkibi: belgilangan miqdorlarda Eurycoma longifolia, Tribulus, Epimedium ekstraktlari va sink laktati.</p>
+          </div>
+          <div class="grid grid--4">
+            <article class="card ingredient">
+              <img class="ingredient__image" src="assets/ingredient-eurycoma.webp" alt="Eurycoma longifolia">
+              <div class="ingredient__body">
+                <span class="ingredient__amount">250 mg</span>
+                <h3 class="ingredient__name">Eurycoma longifolia 100:1 ekstrakti</h3>
+                <p class="ingredient__latin">Eurycoma longifolia (Tongkat Ali)</p>
+              </div>
+            </article>
+            <article class="card ingredient">
+              <img class="ingredient__image" src="assets/ingredient-tribulus.webp" alt="Tribulus">
+              <div class="ingredient__body">
+                <span class="ingredient__amount">150 mg</span>
+                <h3 class="ingredient__name">Tribulus ekstrakti</h3>
+                <p class="ingredient__latin">Tribulus terrestris</p>
+              </div>
+            </article>
+            <article class="card ingredient">
+              <img class="ingredient__image" src="assets/ingredient-epimedium.png" alt="Epimedium">
+              <div class="ingredient__body">
+                <span class="ingredient__amount">50 mg</span>
+                <h3 class="ingredient__name">Epimedium ekstrakti</h3>
+                <p class="ingredient__latin">Epimedium</p>
+              </div>
+            </article>
+            <article class="card ingredient">
+              <img class="ingredient__image" src="assets/ingredient-zinc.webp" alt="Цинк лактат">
+              <div class="ingredient__body">
+                <span class="ingredient__amount">40 mg</span>
+                <h3 class="ingredient__name">Sink laktati</h3>
+                <p class="ingredient__latin">Formulaning mineral komponenti</p>
+              </div>
+            </article>
+          </div>
+          <div class="composition-note">
+            <strong>Yordamchi moddalar:</strong> kartoshka kraxmali, magniy va kalsiy stearati, shakar, maltodekstrin, MKS (mikrokristallik selluloza).
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--white" id="components">
+        <div class="container">
+          <div class="section__head">
+            <h2>Komponentlarning xususiyatlari</h2>
+            <p class="section__text">FITAGRA formulasi tarkibidagi faol komponentlarning batafsil tavsifi.</p>
+          </div>
+          <div class="details-grid">
+            <details class="component-detail">
+              <summary>Eurycoma longifolia</summary>
+              <div class="component-detail__body">
+                <p>Tongkat Ali nomi bilan ham tanilgan Eurycoma longifolia Janubi-Sharqiy Osiyoda erkaklar afrodizyaki sifatida keng qo'llaniladi.</p>
+
+<p>Ushbu o'simlikning farmakologik faolligi uning tarkibida testosteron ishlab chiqarishni rag'batlantiruvchi kvassinoidlarning mavjudligi bilan izohlanadi. Shuningdek ba'zi manbalarga qaraganda, evrikoma preparatlarini qo'llash, immunitetning yaxshilanishiga olib keladi, kayfiyatni yaxshilaydi va osteoporozning rivojlanishini oldini oladi, erkaklar salomatligini mustahkamlaydi, kuch-quvvat va potensiyani oshiradi.</p>
+
+<p>Jinsiy aloqani uzaytiradi, ereksiya va sperma sifatiga ijobiy ta'sir ko'rsatadi. Stressni kamaytiradi, chidamlilikni oshiradi va jinsiy faoliyatni tiklaydi.</p>
+              </div>
+            </details>
+            <details class="component-detail">
+              <summary>Tribulus</summary>
+              <div class="component-detail__body">
+                <p>Umumiy tonusni oshiradi va jinsiy tizimning ayrim funksiyalarini faollashtiradi.</p>
+
+<p>Erkaklarda jinsiy istakni tiklaydi va kuchaytiradi, ereksiya davomiyligini uzaytiradi. Spermatogenezni rag'batlantiradi, spermatozoidlar soni va harakatchanligini oshiradi.</p>
+
+<p>Gipolipidemik ta'sirga ega bo'lib, dislipidemiya bilan kasallangan bemorlarda umumiy xolesterin va LDL (yomon xolesterin) darajasini pasaytiradi, biroq qon zardobidagi triglitseridlar va HDL (yaxshi xolesterin) darajasiga ta'sir qilmaydi.</p>
+              </div>
+            </details>
+            <details class="component-detail">
+              <summary>Epimedium</summary>
+              <div class="component-detail__body">
+                <p>Epimedium erkaklarning reproduktiv tizimi uchun foydali o'simlik sifatida qo'llaniladi.</p>
+
+<p>U o'rta yoshli va keksa erkaklarda uchraydigan erektil disfunktsiyani davolashda ishlatiladi. Bu modda “ikarin” deb ham ataladi, u azot oksidining uzatilishini rag'batlantirib, jinsiy a'zo to'qimalariga qon yetkazilishini yaxshilaydi.</p>
+
+<p>Ikarin ereksiyaga ijobiy ta'sir ko'rsatadi, shu sababli Epimedium potensiyani oshiruvchi vosita sifatida qo'llaniladi.</p>
+              </div>
+            </details>
+           <details class="component-detail">
+  <summary>Sink</summary>
+  <div class="component-detail__body">
+    <p>Sink testosteron va boshqa gormonlarni tartibga soluvchi muvozanatlashtiruvchi modda sifatida jinsiy salomatlik va faoliyatga hissa qo'shadi.</p>
+
+    <p>U erkaklar asosiy jinsiy gormoni bo'lgan testosteron ishlab chiqarilishi bilan bog'liq biokimyoviy jarayonlarda ishtirok etadi.</p>
+
+    <p>Shuningdek, sink qon tomirlarining silliq mushaklarini bo'shashtiruvchi azot oksidi ishlab chiqarilishida muhim rol o'ynaydi, bu esa jinsiy a'zoning qon bilan ta'minlanishini yaxshilab, ereksiyani kuchaytiradi.</p>
+  </div>
+</details>
+</div>
+</div>
+</section>
+      <section class="section product-band" id="benefits">
+        <div class="container product">
+          <div>
+            <img class="product__logo" src="assets/fitagra-logo-white.png" alt="Фитагра">
+            <h2>Ishonch, quvvat va kundalik qo‘llab-quvvatlash uchun</h2>
+            <div class="specs">
+              <div class="spec">
+                <span>Kategoriya</span>
+                <strong>Biologik faol qo‘shimcha</strong>
+              </div>
+              <div class="spec">
+                <span>Chiqarilish shakli</span>
+<strong>Kapsulalar</strong>
+</div>
+<div class="spec">
+  <span>Qo‘llanilishi</span>
+  <strong>Erektil funksiyani qo‘llab-quvvatlash</strong>
+              </div>
+            </div>
+          </div>
+          <aside class="maker" aria-label="Производитель">
+            <div class="maker__logo">
+              <img src="assets/naff-medical-logo.png" alt="NAFF Medical">
+            </div>
+            <h3>NAFF MEDICAL</h3>
+            <p>FITAGRA biologik faol qo‘shimchasini ishlab chiqaruvchi kompaniya.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--white" id="use">
+  <div class="container">
+    <div class="section__head">
+      <h2>Qabul qilish tartibi</h2>
+      <p class="section__text">Qo‘llash usuli va dozasi: ovqatdan keyin og‘iz orqali qabul qilinadi.</p>
+    </div>
+    <div class="grid grid--2 steps">
+      <article class="card step">
+        <h3>Erkaklar uchun doza</h3>
+        <p>Kuniga 1 marta ovqatdan keyin 1 kapsuladan qabul qilinadi.</p>
+      </article>
+      <article class="card step">
+        <h3>Qabul qilish davomiyligi</h3>
+        <p>Qabul qilish kursi – 1 oy. Zarurat bo‘lganda mutaxassis bilan maslahatlashgandan so‘ng kursni takrorlash mumkin.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container">
+    <div class="section__head">
+      <h2>Qo‘llanilishi</h2>
+      <p class="section__text">Erkaklarda erektil disfunktsiya, bepushtlik, erta bo‘shanish, jinsiy faollikning susayishi va yaqinlikdan keyingi charchoqlik holatlarida qo‘llaniladi.</p>
+    </div>
+
+    <div class="grid grid--2">
+      <article class="card">
+        <h3>Erektil funksiya</h3>
+        <p>Erkaklarda erektil disfunktsiya, jinsiy faollikning susayishi va impotensiya holatlarida qo‘llaniladi.</p>
+      </article>
+
+      <article class="card">
+        <h3>Reproduktiv salomatlik</h3>
+        <p>Bepushtlik, erta bo‘shanish va yaqinlikdan keyingi charchoqlik holatlarida qo‘llaniladi.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+      <section class="section section--white">
+  <div class="container">
+    <div class="section__head">
+      <h2>Qo‘llash mumkin bo‘lmagan holatlar</h2>
+      <p class="section__text">Qo‘llashdan oldin cheklovlar bilan tanishing va tavsiya etilgan dozaga rioya qiling.</p>
+    </div>
+    <div class="notice contra">
+      Preparatni homilador va emizikli ayollar, 18 yoshgacha bo'lgan bolalar, yurak, jigar va buyraklar og'ir kasalliklari bo'lgan holatlarda, preparatning komponentlariga yuqori individual sezuvchanlik, hamda prostata bezining giperplaziyasi mavjud bo'lsa, qo'llash mumkin emas. Dozalashga rioya qilish lozim, chunki ko'p miqdorda Tribulus ekstrakti, buyraklar uchun ortiqcha og'irlikga sabab bo'lishi mumkin.
+    </div>
+  </div>
+</section>
+
+      <section class="cta" id="buy">
+        <div class="container cta__inner">
+          <div>
+            <h2>FITAGRA 30 kapsulali qadoqda</h2>
+
+<p>Mahsulotni UZUM MARKET orqali xarid qilishingiz yoki mavjudligi, narxi va buyurtma shartlarini aniqlashtirish uchun qo‘llab-quvvatlash xizmati bilan bog‘lanishingiz mumkin.</p>
+
+<div class="cta__contacts" aria-label="Buyurtma uchun kontaktlar">
+  <a href="tel:+998951792277">+998 95 179 22 77</a>
+  <a href="https://t.me/fitagrasupport" target="_blank" rel="noopener">@fitagrasupport</a>
+</div>
+</div>
+
+<div class="cta__actions">
+  <a class="button market-button" href="https://uzum.uz/uz/product/fitagra-erkaklarda-jinsiy-1828051?skuId=6388668" target="_blank" rel="noopener" aria-label="UZUM MARKET orqali xarid qilish">
+    <span>XARID QILISH</span>
+    <img src="assets/uzum-market-logo.png" alt="UZUM MARKET">
+  </a>
+
+  <div class="contact-actions">
+    <a class="button button--primary" href="tel:+998951792277">Qo‘ng‘iroq qilish</a>
+              <a class="button button--primary" href="https://t.me/fitagrasupport" target="_blank" rel="noopener">Telegram</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="notice">Biologik faol qo‘shimcha. Dori vositasi hisoblanmaydi. Saytdagi ma’lumotlar tanishuv maqsadida taqdim etilgan bo‘lib, mutaxassis maslahatini almashtirmaydi.</div>
+        </div>
+      </section>
+    </main>
+<section class="section section--white">
+  <div class="container">
+    <div class="section__head">
+      <h2>Erkaklar salomatligi va faol hayot tarzi</h2>
+      <p class="section__text">Erkaklar salomatligini saqlash to‘g‘ri ovqatlanish, jismoniy faollik, sifatli dam olish va organizmni foydali moddalar bilan ta’minlashni talab qiladi.</p>
+    </div>
+
+    <p>
+      Zamonaviy hayot tarzi, stress, uyqu yetishmasligi va noto‘g‘ri ovqatlanish erkaklarning umumiy salomatligiga ta’sir ko‘rsatishi mumkin. Shu sababli organizmning energiya almashinuvi va umumiy holatini qo‘llab-quvvatlovchi foydali moddalar muhim ahamiyatga ega.
+    </p>
+
+    <h3>Tongkat Ali (Eurycoma longifolia)</h3>
+    <p>
+      Tongkat Ali nomi bilan mashhur bo‘lgan Eurycoma longifolia Janubi-Sharqiy Osiyoda keng qo‘llaniladigan o‘simliklardan biridir. Ushbu o‘simlik ekstrakti erkaklar uchun mo‘ljallangan ko‘plab mahsulotlar tarkibiga kiritiladi.
+    </p>
+
+    <h3>Tribulus terrestris</h3>
+    <p>
+      Tribulus terrestris dunyoning turli mamlakatlarida qadimdan foydalanib kelinadigan o‘simlik hisoblanadi. Uning ekstrakti erkaklar uchun ishlab chiqarilgan ko‘plab komplekslar tarkibida uchraydi.
+    </p>
+
+    <h3>Sinkning erkaklar salomatligidagi o‘rni</h3>
+    <p>
+      Sink organizm uchun muhim mikroelementlardan biri bo‘lib, ko‘plab biologik jarayonlarda ishtirok etadi. U normal moddalar almashinuvi va umumiy salomatlikni qo‘llab-quvvatlashda muhim ahamiyatga ega.
+    </p>
+
+    <h3>Faol hayot tarzini qo‘llab-quvvatlash</h3>
+    <p>
+      Sog‘lom turmush tarzini saqlash uchun muntazam jismoniy faollik, sifatli uyqu, muvozanatli ovqatlanish va foydali vitamin hamda minerallarni yetarli miqdorda qabul qilish tavsiya etiladi.
+    </p>
+
+    <p>
+      FITAGRA biologik faol qo‘shimchasi erkaklar uchun mo‘ljallangan o‘simlik ekstraktlari va foydali komponentlar majmuasini o‘z ichiga oladi.
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <img src="assets/fitagra-logo-white.png" alt="FITAGRA">
+    <p>FITAGRA, NAFF MEDICAL tomonidan ishlab chiqarilgan biologik faol qo‘shimcha. Qo‘llashdan oldin yo‘riqnoma bilan tanishish va mutaxassis bilan maslahatlashish tavsiya etiladi.</p>
+  </div>
+</footer>
