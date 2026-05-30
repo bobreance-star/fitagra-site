@@ -787,13 +787,57 @@
     }
 
     @media (max-width: 940px) {
-      .nav__links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+     .mobile-menu-btn {
+  display: block;
+}
+.nav-buy {
+  padding: 10px 16px;
+  font-size: 13px;
+  min-height: auto;
+  
 }
 
+.brand__fitagra {
+  width: 100px;
+}
+.nav-buy {
+  min-height: 42px;
+  padding: 0 14px;
+  font-size: 14px;
+}
+.lang-switch {
+  order: 2;
+  margin-left: auto;
+}
+
+.nav-buy {
+  order: 3;
+  margin-left: 10px;
+}
+
+.nav__links {
+  order: 4;
+  width: 100%;
+}
+.nav__links {
+  display: none;
+}
+
+.nav__links.mobile-open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  position: absolute;
+  top: 74px;
+  left: 0;
+  width: 100%;
+
+  padding: 20px;
+  background: rgba(7,10,18,.98);
+  border-top: 1px solid rgba(255,255,255,.1);
+}
       .hero {
         min-height: auto;
         padding: 52px 0 36px;
