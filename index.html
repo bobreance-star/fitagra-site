@@ -529,18 +529,36 @@
       overflow: hidden;
     }
 
-    .component-detail summary {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-      padding: 20px 22px;
-      color: var(--white);
-      font-size: 20px;
-      font-weight: 800;
-      cursor: pointer;
-      list-style: none;
-    }
+    .component-detail summary::after {
+  content: "+";
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--silver);
+  color: var(--white);
+  font-weight: 800;
+  animation: pulsePlus 1.5s infinite ease-in-out;
+}
+
+@keyframes pulsePlus {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.component-detail[open] summary::after {
+  content: "-";
+  animation: none;
+}
 
     .component-detail summary::-webkit-details-marker {
       display: none;
