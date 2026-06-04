@@ -552,17 +552,33 @@
     }
 
     .component-detail summary::after {
-      content: "+";
-      width: 30px;
-      height: 30px;
-      display: grid;
-      place-items: center;
-      flex: 0 0 auto;
-      border-radius: 50%;
-      background: var(--silver);
-      color: var(--white);
-      font-weight: 800;
-    }
+  content: "+";
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--silver);
+  color: var(--white);
+  font-weight: 800;
+  animation: pulsePlus 1.5s infinite ease-in-out;
+}
+    @keyframes pulsePlus {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+    .component-detail[open] summary::after {
+  content: "-";
+  animation: none;
+}
 
     .component-detail[open] summary::after {
       content: "-";
