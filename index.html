@@ -782,7 +782,26 @@
       font-weight: 900;
       white-space: nowrap;
     }
+.market-button span {
+  color: #32115d;
+  font-size: 22px;
+  font-weight: 900;
+  white-space: nowrap;
+  display: inline-block;
+  animation: buyPulse 1.5s infinite ease-in-out;
+}
 
+@keyframes buyPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
     .contact-actions {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
