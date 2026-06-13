@@ -835,9 +835,26 @@
   cursor: pointer;
   padding: 0;
 }
-   
+  .mobile-pack {
+  display: none;
+} 
     @media (max-width: 940px) {
-     .mobile-menu-btn {
+     .mobile-pack {
+  display: block;
+  min-height: auto;
+  margin: 10px 0 -15px;
+}
+
+.hero__visual:not(.mobile-pack) {
+  display: none;
+}
+
+.mobile-pack .pack {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+      .mobile-menu-btn {
   display: block;
 }
 .nav-buy {
@@ -1033,6 +1050,9 @@
               <img class="hero__logo" src="assets/fitagra-logo-white.png" alt="Фитагра">
             </h1>
             <p class="hero__lead">Erkaklar salomatligini qo‘llab-quvvatlash va erektil funksiyani yaxshilash uchun o‘simliklar ekstraktlari asosidagi kompleks.</p>
+            <div class="hero__visual mobile-pack">
+  <img class="pack" src="assets/fitagra-pack.png" alt="">
+</div>
             <div class="hero__actions">
               <a class="button button--light" href="#buy">Qayerdan xarid qilish</a>
               <a class="button button--primary" href="#about">Batafsil</a>
