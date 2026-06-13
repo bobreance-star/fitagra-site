@@ -821,8 +821,26 @@
   cursor: pointer;
   padding: 0;
 }
+    .mobile-pack {
+  display: none;
+}
     @media (max-width: 940px) {
-     .mobile-menu-btn {
+     .mobile-pack {
+  display: block;
+  min-height: auto;
+  margin: 15px 0 25px;
+}
+
+.hero__visual:not(.mobile-pack) {
+  display: none;
+}
+
+.mobile-pack .pack {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+      .mobile-menu-btn {
   display: block;
 }
 .nav-buy {
@@ -1019,6 +1037,9 @@
               <img class="hero__logo" src="assets/fitagra-logo-white.png" alt="Фитагра">
             </h1>
             <p class="hero__lead">Комплекс на основе растительных экстрактов для поддержки мужского здоровья и улучшения эректильной функции у мужчин.</p>
+            <div class="hero__visual mobile-pack">
+  <img class="pack" src="assets/fitagra-pack.png" alt="">
+</div>
             <div class="hero__actions">
               <a class="button button--light" href="#buy">Где купить</a>
               <a class="button button--primary" href="#about">Подробнее</a>
